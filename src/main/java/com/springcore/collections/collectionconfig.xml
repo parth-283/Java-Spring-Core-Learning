@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+						">
+
+	<bean name="emp1" class="com.springcore.collections.Emp">
+		<property name="name" value="Parth Kathiriya" />
+
+		<!-- ***First List*** -->
+		<property name="phones">
+			<list>
+				<value>9157764985</value>
+				<value>8596477519</value>
+				<value>9674952558</value>
+				<value>6353834882</value>
+				<value>9873530252</value>
+				<null />
+			</list>
+		</property>
+
+		<!-- ***First Set*** -->
+		<property name="addresses">
+			<set>
+				<value>Surat</value>
+				<value>Delhi</value>
+				<value>Hariyana</value>
+				<value>Mumbai</value>
+				<value>Bardoli</value>
+			</set>
+		</property>
+
+		<!-- ***First Map*** -->
+		<property name="courses">
+			<map>
+				<entry key="java" value="2month" />
+				<entry key="javaScript" value="1month" />
+				<entry key="python" value="1.5month" />
+			</map>
+		</property>
+		
+		<!-- ***First Properties*** -->
+		<property name="props">
+			<props>
+				<prop key="name">Parth</prop>
+				<prop key="address">Surat</prop>
+			</props>
+		</property>
+
+	</bean>
+
+</beans>
